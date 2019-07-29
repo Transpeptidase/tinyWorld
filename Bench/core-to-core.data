@@ -1,0 +1,14 @@
+#### 1-1 round trip
+same physical core (hyperthread) : 60ns
+in same socket                   : 182ns
+different socket (QPI)           : 545ns
+
+#### broadcast 1-n
+two sockets, 12 core per socket
+
+## One send buffer
+2    4    8    12    16    20    24
+182  248  337  352   743   780   850
+
+## Per Receiver Send Buffer
+               636               1887
